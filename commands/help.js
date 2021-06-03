@@ -6,8 +6,8 @@ const i18n = require("i18n");
 i18n.setLocale(LOCALE);
 
 module.exports = {
-  name: "help",
-  aliases: ["h"],
+  name: "সাহায্য",
+  aliases: ["সাহায্য"],
   description: i18n.__("help.description"),
   execute(message) {
     let commands = message.client.commands.array();
@@ -27,7 +27,7 @@ module.exports = {
         true
       );
     });
-    helpEmbed.addField(`**Links!**`, `**[Support Server](${support_server || "https://discord.gg/HMEKZdEExZ"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=70282305&scope=bot)**`)
+
 
     helpEmbed.setTimestamp();
 
